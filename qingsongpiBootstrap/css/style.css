@@ -1,0 +1,144 @@
+.wrap{
+	width: 100%;
+	/* height: 1000px; */
+}
+
+nav *{
+	font-size: 16px;
+	color: #ffffff;
+}
+nav.navbar{
+	background-color: #000000;
+	border-bottom: 2px solid #000000;
+}
+
+.navbar-brand{
+	margin-top: -10px;
+}
+.navbar-brand img{
+	height: 40px;
+	float: left;
+	/*margin-top: -10px;*/
+}
+.navbar-brand span{
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	float: left;
+	margin-top: -5px;
+}
+#custom-nav{
+	padding-left: 10%;
+}
+.custom-nav-right{
+	float: right;
+}
+#custom-nav li span{
+	color: #ffffff;
+}
+#custom-nav li a:hover span{
+	color: #ff1234;
+}
+#custom-nav-right img{
+	height: 40px;
+	padding-top: 10px;
+	padding-right: 20px;
+	float: left;
+	cursor: pointer;
+	
+}
+#custom-nav-right span{
+	height: 50px;
+	line-height: 50px;
+}
+#custom-nav-right button{
+	width: 100px;
+	height: 30px;
+	background-color: #000000;
+	margin-left: 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+}
+#custom-nav-right button:hover{
+	background: #ff1234;
+	border: 1px solid transparent;
+}
+.get_top{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	width: 50px;
+	height: 50px;	
+	background-color: #1b1515;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.get_top span{
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 8px;
+	margin-left: 12px;
+}
+
+/*header部分*/
+.header{
+	margin-top: 50px;	background-color: #191818;	
+}
+.header *{
+	color: #FFFFFF;
+}
+.header_left{
+	margin-top: 150px;
+}
+.header_left h1{
+	margin-bottom: 40px;
+}
+.header_left p{
+	margin-bottom: 50px;
+}
+.header_left button{
+	width: 150px;	height: 50px;
+	background-color: #c32d2d;	border-radius: 25px;
+	border: 2px solid #c32d2d;	cursor: pointer;
+}
+.header_left button:hover{
+	background-color: transparent;
+}
+
+/*banner部分*/
+.banner{
+    width: 100%;
+    background-color: #0e0e0e;
+    padding: 50px 0;
+}
+#banner_box{
+    text-align: center;
+    color: white;
+}
+#banner_box h3{
+    color: #ef4c4c;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#banner_box p{
+    font-size: 14px;
+}
+
+
+/*自适应不同屏幕*/
+@media only screen and (min-width: 992px) {
+	/*.about-box3 .container{
+		width: 80%;
+	}*/
+}
+@media (min-width: 768px) and (max-width: 992px) {		
+	#custom-nav-right{display: none;}
+	#custom-nav{float: right;}	
+}
+@media (max-width: 768px) {
+	#custom-nav-right{display: none;}
+	.header_left{margin-top: 10px;text-align: center;}
+	.header img{width: 90%;margin: 0 auto;display: block;}
+}
