@@ -43,4 +43,4 @@
 
 ### 学习思路或模块
 
-* 主要通过一个项目——轻松批网站[https://github.com/wuwuzhishu/WebFrontCode/tree/master/qingsongpi](https://github.com/wuwuzhishu/WebFrontCode/tree/master/qingsongpi)来贯通整个课程，主要包括两大知识模块HTML+CSS[https://github.com/wuwuzhishu/WebFrontCode/tree/master/HTML%2BCSS](https://github.com/wuwuzhishu/WebFrontCode/tree/master/HTML%2BCSS)和JavaScript+JQuery[https://github.com/wuwuzhishu/WebFrontCode/tree/master/JavaScript](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JavaScript),通过此项目来学习如何设计和开发静态网站。
+* 主要通过一个项目——[轻松批网站](https://github.com/wuwuzhishu/WebFrontCode/tree/master/qingsongpi)来贯通整个课程，主要包括两大知识模块[HTML+CSS](https://github.com/wuwuzhishu/WebFrontCode/tree/master/HTML%2BCSS)和JavaScript+JQuery[JavaScript+JQuery](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JavaScript),通过此项目来学习如何设计和开发静态网站。
