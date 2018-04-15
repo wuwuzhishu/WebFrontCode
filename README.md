@@ -1,4 +1,5 @@
-# HTML+CSS+JavaScript
+# WebFrontCode
+
 >此内容为移动应用开发专业的Web前端开发的内容
 
 ## 课程说明
@@ -20,3 +21,22 @@
 ### 考核要求
 
 考核方式采用过程考核，期末不进行考试，需要每个人提交两个作品。
+
+### 课程的知识点
+
+* HTML：[http://www.w3school.com.cn/html/index.asp](http://www.w3school.com.cn/html/index.asp "w3school-HMTL教程")
+* CSS：[http://www.w3school.com.cn/css/index.asp](http://www.w3school.com.cn/css/index.asp "w3school-CSS教程")
+* JavaScript和JQuery：[http://www.w3school.com.cn/js/index.asp](http://www.w3school.com.cn/js/index.asp "w3school-JavaScript教程")
+
+### 开发工具
+
+* Visual Studio Code
+* Google Chrome
+
+### 浏览器（兼容性）
+
+* Google Chrome
+* Firefox
+* IE或Edge
+* Safri
+* Opera
