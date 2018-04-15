@@ -31,6 +31,7 @@
 * HTML：[w3school-HMTL教程](http://www.w3school.com.cn/html/index.asp )
 * CSS：[w3school-CSS教程](http://www.w3school.com.cn/css/index.asp )
 * JavaScript和JQuery：[w3school-JavaScript教程](http://www.w3school.com.cn/js/index.asp "")
+* MOOC（慕课）视频：[HTML+CSS基础课程](https://www.imooc.com/learn/9),[JavaScript进阶篇](https://www.imooc.com/learn/10)
 
 ### 开发工具
 
