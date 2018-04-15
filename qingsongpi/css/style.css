@@ -1,0 +1,424 @@
+/* *是一个匹配符，匹配所有的选择符 */
+*{
+    margin: 0px;
+}
+a{
+    text-decoration-line: none;
+}
+/* ID选择符以#开始 */
+/*包裹层*/
+#wrap{    
+    width: 100%;
+    margin: 0 auto;
+}
+/*顶部部分*/
+#top{
+    width: 100%;
+    height: 80px;
+    background-color: #000000;
+}
+#content{
+    width: 90%;
+    margin: 0 auto;/*居中显示*/
+    overflow: hidden;
+}
+#top_left,#top_mid,#top_right{
+    width: 30%;
+    float: left;
+    overflow: hidden;
+}
+#top_left img{
+    height: 50px;
+    float: left;
+    padding-top: 15px;   
+}
+#top_left span{
+    height: 80px;
+    display: inline-block;
+    float: left;
+    line-height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #bcbcca;
+}
+#top_mid ul{
+    list-style: none;
+}
+#top_mid ul li{
+    float: left;
+    width: 25%;
+    height: 80px;
+    line-height: 80px;/*行高*/
+    text-align: center;/*水平居中*/
+}
+#top_mid ul li.active a{
+    color: red;
+}
+#top_mid a{
+    font-size: 16px;
+    color: white;
+}
+/* 伪类选择符 */
+#top_mid a:hover{
+    color: red;
+}
+#top_right{
+    color:white;
+    float: right;
+}
+#top_right img{
+    height: 40px;
+    padding-top: 20px;
+    float: left;
+}
+#top_right span{
+    height: 80px;
+    display: inline-block;
+    float: left;
+    line-height: 80px;
+    margin-left: 20px;
+}
+#top_right button{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;    
+    cursor: pointer;/*改变鼠标形状，手*/
+}
+#top_right button:hover{
+    background-color: #f74906;
+    border-color: #f74906;
+}
+
+/*头部部分*/
+#header{
+    width: 100%;
+    background-color: #5f5b5b;
+}
+#header_left{
+    float: left;
+    color: #ffffff;
+    margin-top: 100px;
+}
+#header_left h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#header_left p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+#header_left input{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #f73f3f;
+    border:solid 1px #f73f3f;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+}
+#header_left input:hover{
+    background-color: transparent;
+    color: #f73f3f;
+    
+}
+/* 类选择符以.开始 */
+.float_right{
+    float: right;
+}
+#header img{
+    height: 400px;
+}
+/*banner部分*/
+#banner{
+    width: 100%;
+    background-color: #0e0e0e;
+    padding: 50px 0;
+}
+#banner ul{
+    list-style: none;
+    margin: 0 -50px;
+}
+#banner ul li{
+    float: left;
+    width: 25%;
+}
+#banner_box{
+    text-align: center;
+    color: white;
+}
+#banner_box h3{
+    color: #ef4c4c;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#banner_box p{
+    font-size: 14px;
+}
+/*优势部分*/
+#youshi{
+    background-color: #e2e2e8;
+}
+#youshi_header{
+    text-align: center;
+    margin: 70px 0;
+}
+.color_red{
+    color: #e46e6e;
+}
+#youshi_body{
+    margin-bottom: 100px;
+    width: 100%;
+    overflow: hidden;/*清除youshi_body里面元素浮动对后序元素的影响*/
+}
+#youshi_box{
+    float: left;
+    width: 23%;
+    text-align: center;
+    border: solid 1px #f15252;
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+#youshi_box img{
+    height: 100px;
+}
+
+/*商务部分*/
+#shop_header{
+    text-align: center;
+    margin: 50px 0;
+}
+#shop_header span{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #d06d6d;
+    margin: 0 20px;
+    border-radius: 20px;
+    color: white;
+}
+#shop_header span.active{
+    background-color: #978686;
+}
+#shop_body{
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+#shop_body_left{
+    float: left;
+    width: 50%;
+}
+#shop_body img{
+    float: right;    
+}
+#shop_body_left h1{
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+#shop_body_left p{
+    margin-bottom: 30px;
+    color: #827b7b;
+}
+#shop_body_left p.font_weight{
+    font-weight: 900;
+}
+#shop_body_left button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #d06d6d;
+    border: solid 1px #d06d6d;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+#shop_body_left button:hover{
+    background-color: transparent;
+    color: #d06d6d;
+}
+
+/* 帮助部分 */
+#help{
+    width: 100%;
+    background-color: #dad6d6;
+}
+#help h1{
+    text-align: center;
+    color: #bf2f2f;
+    font-weight: 100;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    border-bottom: solid 1px #8c8787;
+}
+#help_body{
+    width: 100%;
+    overflow: hidden;/*由于里面的内容设置了浮动，所以要清楚浮动对后序元素的影响*/
+    margin-top: 50px;  
+    margin-bottom: 50px;  
+}
+#help_body img{
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+    margin-left: 50px;
+}
+#help_body_right{
+    width: 700px;
+    float: right;
+    margin-right: 50px;
+}
+#help_body_right p{
+    font-size: 14px;
+    color: #736e6e;
+    text-indent: 2em;
+}
+#help_right_box{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+#help_right_box_left{
+    float: left;
+}
+#help_right_box span{
+    float: right;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-right: 50px;
+    font-size: 30px;
+}
+#help_right_box_left h3{
+    color: #d65e5e;
+}
+#help_body_right p.help_p_teshu{
+    color: #d65e5e;
+    text-indent: 0em;
+}
+
+/* 表单部分 */
+#form{
+    width: 100%;
+    background-color: white;
+    padding: 50px 0;
+}
+#form_left{
+    float: left;
+}
+#form_left h1{
+    color: red;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+#form_left input{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+#form_left input#youxiang{
+    width: 505px;
+}
+#form_left textarea{
+    width: 505px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+#form_left input.submit{
+    background-color: red;
+    border: solid 1px red;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+}
+#form_left input.submit:hover{
+    background-color: palevioletred;
+}
+#form_left span{
+    color:#dad6d6;
+    font-size: 14px;
+}
+/* footer部分 */
+#footer{
+    background-color: #000000;
+    padding: 30px 0;
+    color: white;
+}
+#footer span{
+    height: 60px;
+    line-height: 60px;
+    display: inline-block;
+    color: #dad6d6;
+    font-style: italic;
+}
+#footer input{
+    float: right;
+    background-color:#D7551A;
+    width: 200px;
+    height: 60px;
+    border: solid 1px #D7551A;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+}
+#footer input:hover{
+    background-color: transparent;
+}
+/* 底部部分 */
+#bottom{
+    width: 100%;
+    background-color: #333435;
+    color: white;
+    padding: 40px 0;
+}
+#bottom ul{
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+#bottom ul li{
+    float: left;
+    width: 23%;
+    margin-right: 20px;
+}
+#bottom ul li h3{
+    color: #c3c0cf;
+    font-weight: 100;
+    /* font-size: 24px; */
+    margin-bottom: 20px;
+}
+#bottom ul li p{
+    color: #c3c0c0;
+    font-size: 14px;
+}
+#bottom ul li span,p{
+    /* display: block; */
+    color: #c3c0c0;
+    font-size: 14px;
+}
+#bottom ul li p.color_green{
+    color: green;
+    margin-bottom: 20px;
+}
+
+#bottom ul li img{
+    height: 25px;
+    float: left;
+}
+#bottom ul li p span{
+    display: inline-block;
+    height: 25px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

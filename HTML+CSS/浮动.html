@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 33%;
+            height: 100px;
+            background-color: red;
+            float: left;/*float浮动*/
+            
+        }
+         #box2{
+            width: 33%;
+            height: 100px;
+            background-color: green;
+            float: left;
+        }
+         #box3{
+            width: 33%;
+            height: 100px;
+            background-color: blue;
+            float: left;;
+        }
+        #box4{
+            width: 600px;
+            height: 300px;
+            background-color: aqua;
+            /* clear:both;清除浮动的一种方式 */
+        }
+        #box{
+            width: 100%;
+            overflow: hidden;/*清除浮动的第2种方式，也是比较常用的一种*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+    <div id="box4"></div>
+</body>
+</html>
