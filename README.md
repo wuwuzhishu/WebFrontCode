@@ -35,11 +35,11 @@
 
 ### 目录说明
 
-* BootstrapTemplate是应用Bootstrap框架的模板，在此基础上添加内容即可
-* HTML+CSS是关于HTML和CSS的上课例子目录
-* JS+JQuery是JavaScript和JQuery的上课例子目录
-* qingsongpi是轻松批项目的目录
-* qingsongpiBootstrap是应用Bootstrap构建轻松批项目的目录
+* [BootstrapTemplate](https://github.com/wuwuzhishu/WebFrontCode/tree/master/BootstrapTemplate)是应用Bootstrap框架的模板，在此基础上添加内容即可
+* [HTML+CSS](https://github.com/wuwuzhishu/WebFrontCode/tree/master/HTML%2BCSS)是关于HTML和CSS的上课例子目录
+* [JS+JQuery](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JS%2BJQuery)是JavaScript和JQuery的上课例子目录
+* [qingsongpi](https://github.com/wuwuzhishu/WebFrontCode/tree/master/qingsongpi)是轻松批项目的目录
+* [qingsongpiBootstrap](https://github.com/wuwuzhishu/WebFrontCode/tree/master/qingsongpiBootstrap)是应用Bootstrap构建轻松批项目的目录
 
 ### 开发工具
 
