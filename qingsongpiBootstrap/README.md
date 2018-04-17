@@ -1,6 +1,6 @@
 # 轻松批BootStrap
 
-> 应用Bootstrap把轻松批改造为自适应网站
+> 应用Bootstrap把轻松批改造为自适应网站，此部分内容为有能力的自学。
 
 ## Bootstrap中文网
 
