@@ -33,6 +33,14 @@
 * JavaScript和JQuery：[w3school-JavaScript教程](http://www.w3school.com.cn/js/index.asp "")
 * MOOC（慕课）视频：[HTML+CSS基础课程](https://www.imooc.com/learn/9),[JavaScript进阶篇](https://www.imooc.com/learn/10)
 
+### 目录说明
+
+* BootstrapTemplate是应用Bootstrap框架的模板，在此基础上添加内容即可
+* HTML+CSS是关于HTML和CSS的上课例子目录
+* JS+JQuery是JavaScript和JQuery的上课例子目录
+* qingsongpi是轻松批项目的目录
+* qingsongpiBootstrap是应用Bootstrap构建轻松批项目的目录
+
 ### 开发工具
 
 * Visual Studio Code
