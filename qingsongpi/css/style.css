@@ -420,3 +420,252 @@ a{
     margin-bottom: 10px;
     margin-left: 10px;
 }
+
+/* 服务页面样式 */
+#service_body{
+    width: 100%;
+    padding: 30px 0;
+}
+#service_top{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#service_top h1{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#service_top h1 span{
+    margin-left: 20px;
+    color: #ef5050;
+}
+#service_body ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+#service_body li{
+    float: left;
+    width: 50%;
+    margin-bottom: 70px;
+}
+#service_box{
+    text-align: center;
+}
+#service_box img{
+    height: 100px;
+}
+#service_box h3{
+    color: #ef5050;
+    margin: 20px 0 10px;
+}
+#service_body p{
+    color: #4b4b4c;
+}
+
+
+/* 定价页面样式 */
+#price_body{
+    background-color: #6C6B6B;
+}
+#price_header{
+    text-align: center;
+    color: #ffffff;
+    padding: 50px 0;
+}
+#price_header h1{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#price_header span{
+    font-size: 14px;
+}
+#price_content{
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#price_box{
+    float: left;
+    width: 300px;
+    text-align: center;
+    margin: 0 49px;
+    border: solid 1px #ffffff;
+    margin-top: 39px;
+}
+#price_box.price_box_mid{
+    margin-top: 0px;
+}
+#price_box_header{
+    background-color: #c4c4c4;
+    padding: 20px 0;
+    color: #ffffff;
+}
+.price_box_mid #price_box_header{
+    background-color: #ef4f19;
+}
+#price_box_header h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+#price_box_header span{
+    font-size: 14px;
+}
+#price_box_content{
+    background-color: #ffffff;
+    color: #222222;
+    padding: 30px;
+}
+#price_box_content p{
+    margin-bottom: 20px;
+    color: #333435;
+    font-size: 14px;
+}
+#price_box_content p.font_bolder{
+    font-size: 24px;
+    font-weight: 900;
+}
+#price_box_content p.font_bold{
+    font-size: 18px;
+    font-weight: 900;
+}
+#price_box_content button{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    height: 40px;
+    color: #ef4f19;
+    border: solid 1px #ef4f19;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+.price_box_mid #price_box_content button{
+    background-color: #ef4f19;
+    color: #ffffff;
+}
+#price_box_content button:hover{
+    background-color: #ef4f19;
+    color: #ffffff;
+}
+.price_box_mid #price_box_content button:hover{
+    background-color: transparent;
+    color: #ef4f19;
+}
+#price_box_content span{
+    margin: 30px 0;
+    display: inline-block;
+}
+#price_box_content span a{
+    color: #ef4f19;
+    text-decoration: none;
+}
+
+ /* 关于页面样式 */
+ #about_us{
+     width: 100%;
+     padding: 30px 0;
+ }
+#about_us img{
+    float: left;
+    width: 40%;
+}
+#us_right{
+    float: right;
+    width: 55%;
+}
+#us_right h1{
+    font-weight: 400;
+    font-style: oblique;
+}
+#us_right p{
+    text-indent: 2em;
+    color: #333435;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+#line{
+    width: 50px;
+    border-top: solid 2px red;
+    margin: 20px 0;
+}
+
+#about_team{
+    width: 100%;
+    background-color: #F3F3F3;
+    padding: 30px 0;
+}
+#team_header{
+    text-align: center;
+}
+#line_center{
+    width: 50px;
+    border-bottom: solid 2px red;
+    margin: 20px auto;
+}
+#team_header span{
+    font-weight: 100;
+    font-style: oblique;
+}
+#team_content{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+#team_content img{
+    float: left;
+    width: 15%;
+    border-radius: 30px;
+}
+#team_right{
+    float: right;
+    width: 80%;
+}
+#team_right p{
+    color: #222222;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+#team_right span{
+    color: #ef4f19;
+    float: right;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 50px;
+}
+
+#about_contact{
+    width: 100%;
+    padding: 30px 0;
+}
+#about_contact img{
+    width: 60%;
+    float: left;
+    border-radius: 30px;
+}
+#contact_right{
+    float: right;
+    width: 35%;
+}
+#contact_right h1{
+    font-size: 26px;
+}
+#line.lg_left{
+    margin-left: 26px;
+    width: 52px;
+}
+#contact_right ul{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+#contact_right li{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+
+
+
+
