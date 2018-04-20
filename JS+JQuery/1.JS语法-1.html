@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />    
+    <title>Page Title</title>
+    <!-- 内部js -->
+    <script>
+        /* alert("hello");*/
+        /*
+        //1.变量和数据类型
+        var a;
+        a=12;
+        alert(a+12);
+        a="hello";
+        alert(a+12);
+        var arr= Array(4);
+        arr[0] = 1234;
+        arr[1] = "hello";
+        */
+        //2.运算符
+        //算术运算符：+  - *  /  %  自增++   自减--
+        var a = 10;                        //输出    a
+        // document.write((a++) + "<br>");    //10     11
+        // document.write((++a) + "<br>");    //12       12
+        // document.write((a--) + "<br>");    //12     11
+        // document.write((--a) + "<br>");    //10       10
+
+        // document.write((a--) + "<br>");    
+        // document.write((++a) + "<br>");    
+        // document.write((a++) + "<br>");    
+        // document.write((--a) + "<br>");    
+        
+        // 写一个函数，实现求两个数的和
+        function qiuhe() {
+            //1.第一种方法
+            // var a = document.getElementById("first");
+            // var b = document.getElementById("second");
+            // var c = document.getElementById("result");
+            // c.value = Number(a.value) + Number(b.value);
+            // alert(a.value);
+            //2.简练写法
+            // document.getElementById("result").value =
+            //     Number(document.getElementById("first").value)+
+            //     Number(document.getElementById("second").value);
+
+            //3.第二种方法
+            var m = document.getElementsByTagName("input");//m是一个数组
+            // alert(m.length);
+            m[2].value = Number(m[0].value) + Number(m[1].value)
+        }
+        
+    </script>
+    <!-- 外部js -->
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <input type="text" name="" id="first" placeholder="第1个数">
+    +
+    <input type="text" name="" id="second" placeholder="第2个数">
+    =
+    <input type="text" name="" id="result" placeholder="结果：前两个数的和">
+    <input type="button" value="计算" onclick="qiuhe()">
+    <!-- 事件监听：
+    1.事件源
+    2.事件类型
+    3.事件监听处理代码 -->
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript 入门</title>
+        <!-- 内部js -->
+        <script type="text/javascript">
+            /*
+            // 1.数据类型
+            var a;//变量的声明
+            a = 1;//变量的赋值
+            alert(a + 10);
+            a = "hello"
+            alert(a + 10);
+            //数组的定义
+            var arr = new Array(4);
+            arr[0] = 1;
+            arr[1] = "hello";            
+            */
+           /*
+            //    2.运算符：算术、关系、逻辑运算符
+            // 算术 ：+ - * / %  自增和自减  ++  -- 
+            var a=10;                          // a   输出
+            document.write((--a) + "<br>");    //9     9
+            document.write((++a) + "<br>")    //10     10
+            document.write((a++)+"<br>");    // 11       10  
+            document.write((a--) + "<br>");   //10        11
+            //关系：>  >=  <  <=  == !=
+            //逻辑： !   &&  ||    
+            */
+           function qiuhe() {
+               //分别得到了id为first和second的两个元素节点
+            //    var a = document.getElementById("first");
+            //    var b = document.getElementById("second");
+            //    var c = document.getElementById("result");              
+            //    c.value =  Number(a.value) + Number(b.value);
+            //    Number()//把数字字符串转换为数值
+                // document.getElementById("result").value =
+                //     Number(document.getElementById("first").value)+
+                //      Number(document.getElementById("second").value);
+                // 用通过标记获得元素的方法
+                // document.getElementsByTagName("input");
+                document.getElementsByTagName("input")[2].value=
+                    Number(document.getElementsByTagName("input")[0].value)+
+                    Number(document.getElementsByTagName("input")[1].value);
+           }
+        </script>
+        <!-- 外部js -->
+        <!-- <script src="js/myscript.js"></script> -->
+        
+    </head>
+    <body>
+        <input type="text" name="" id="first" placeholder="第一个数">
+        +
+        <input type="text" name="" id="second"  placeholder="第二个数">
+        =
+        <input type="text" name="" id="result"  placeholder="结果，求2个数的和">
+        <input type="button" value="计算" onclick="qiuhe()">
+        <!-- onclick事件监听，监听代码通过函数来实现 -->
+
+    </body>
+</html>
