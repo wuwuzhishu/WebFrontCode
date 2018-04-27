@@ -18,7 +18,11 @@
             var ge = b%10;
             var shi = Math.floor(b / 10)%10;
             var bai = Math.floor(b / 100);
-            //floorz向下取整，ceil向上取整、round四舍五入            
+            /*
+                Math.ceil(s)向上取整
+                Math.round(s)四舍五入
+                Math.floor(s)向下取整
+            */            
             var he = Math.pow(ge, 3) + Math.pow(shi, 3) + Math.pow(bai, 3);
             // alert(shi);
             if(b == he){
