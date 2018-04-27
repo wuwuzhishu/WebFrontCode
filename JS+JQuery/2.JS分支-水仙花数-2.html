@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <script>
+    // if语法
+    // if(条件){
+    //     语句1;
+    // }[else{
+    //     语句2;
+    // }]
+    function shuixianhua() {
+        var a = document.getElementById("shu").value;
+        var b = Number(a);//b里面就是三位数（整数）
+        if(b >= 100 && b < 1000){
+            // alert("满足水仙花数的前提");
+            var ge = b%10;
+            var shi = Math.floor(b / 10)%10;
+            var bai = Math.floor(b / 100);
+            //floorz向下取整，ceil向上取整、round四舍五入            
+            var he = Math.pow(ge, 3) + Math.pow(shi, 3) + Math.pow(bai, 3);
+            // alert(shi);
+            if(b == he){
+                document.getElementById("result").value="是水仙花数";
+            }else{
+                document.getElementById("result").value = "不是水仙花数";
+            }
+        }else{
+            alert("请输入一个三位数！"); 
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="shu" placeholder="请输入一个三位数">
+    <input type="text" name="" id="result" placeholder="结果">
+    <input type="button" value="计算" onclick="shuixianhua()">
+</body>
+</html>
