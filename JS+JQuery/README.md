@@ -16,7 +16,7 @@
 
 ## 2018.4.27
 
-三个例子：
+四个例子：
 
 1. [水仙花数](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0.html)判断一个数是不是水仙花数
 2. [成绩等级](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E6%88%90%E7%BB%A9%E7%AD%89%E7%BA%A7.html)分别有if和switch的写法
