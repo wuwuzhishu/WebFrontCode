@@ -20,4 +20,3 @@
 1. [水仙花数](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0-2.html)判断一个数是不是水仙花数
 2. [成绩等级](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E6%88%90%E7%BB%A9%E7%AD%89%E7%BA%A7-2.html)分别有if和switch的写法
 3. [年月日](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E5%B9%B4%E6%9C%88%E6%97%A5-2.html)根据年月日求是当年的第多少天，主要是练习break语句的应用
-

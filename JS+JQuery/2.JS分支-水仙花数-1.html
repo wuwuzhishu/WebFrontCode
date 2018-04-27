@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function shuixianhua() {
+            //  alert(Math.round(1.23));
+            var a = document.getElementById("shu").value;
+            var b = Number(a);
+            if(b<100 ||b>=1000){
+                alert("请输入一个三位数");
+            }else{
+                var ge = b%10;
+                var shi = Math.floor(b / 10)%10;
+                var bai = Math.floor(b / 100);                
+                /*
+                    Math.ceil(s)向上取整
+                    Math.round(s)四舍五入
+                    Math.floor(s)向下取整
+                */
+                var he = Math.pow(ge,3)+Math.pow(shi,3)+Math.pow(bai,3);
+                // alert(he);
+                if(he==b){
+                    document.getElementById("result").value="是水仙花数";
+                }else{
+                    document.getElementById("result").value = "不是水仙花数";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="shu" placeholder="请输入一个数">
+    <input type="text" name="" id="result" placeholder="结果">
+    <input type="button" value="计算" onclick="shuixianhua()">
+</body>
+</html>

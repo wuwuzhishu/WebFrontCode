@@ -36,6 +36,36 @@
         [default:值n+1]
     }
     */
+    function score1() {
+        var a = document.getElementById("shu").value;
+        var result = document.getElementById("result");
+        var score = Number(a);
+        if(score<0 ||score>100){
+            alert("成绩应该在0到100之间");
+        }else{
+            switch (Math.floor(score / 10)) {
+                case 10:
+                case 9:
+                    result.value = "优秀";
+                    break;
+                case 8:
+                    result.value = "良好";
+                    break;
+                case 7:
+                    result.value = "中等";
+                    break;
+                case 6:
+                    result.value = "及格";
+                    break;
+                default:
+                    result.value = "不及格";
+                    break;
+            }
+        }
+    }
+
+
+
     function grade_switch() {
         var a = document.getElementById("shu").value;
         var result = document.getElementById("result");
@@ -65,6 +95,6 @@
 <body>
     <input type="text" name="" id="shu" placeholder="请输入一个成绩">
     <input type="text" name="" id="result" placeholder="等级">
-    <input type="button" value="计算" onclick="grade_switch()">
+    <input type="button" value="计算" onclick="score1()">
 </body>
 </html>
