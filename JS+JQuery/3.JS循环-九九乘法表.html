@@ -4,18 +4,27 @@
     <meta charset="UTF-8">    
     <title>Document</title>
     <script>        
-        // document.write(str);
-        var str = "";
-        for( var i = 1; i <= 9; i++){
-            for(var j = 1; j <= i;j++){
-                str = str + i + "*" + j + "=" + (i*j) +"&nbsp;&nbsp;&nbsp;&nbsp;";
-            }
-            str = str + "<br>";
-        }
-        document.write(str);
+       function jisuan() {
+           var str = "";
+           for (var i = 1; i <= 9; i++) {
+               for (var j = 1; j <= i; j++) {
+                   str = str + i + "*" + j + "=" + (i * j) + "&nbsp;&nbsp;&nbsp;&nbsp;";
+               }
+               str = str + "<br>";
+           }
+           document.getElementById("wrap").innerHTML = str;
+       }
     </script>
+    <style>
+        #wrap{
+            width: 900px;
+            height: 400px;
+            border: solid 1px red;
+        }
+    </style>
 </head>
 <body>
-    
+    <input type="button" value="确定" onclick="jisuan()">
+    <div id="wrap"></div>
 </body>
 </html>

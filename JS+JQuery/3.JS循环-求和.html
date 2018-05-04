@@ -59,15 +59,18 @@
             var b = Number(document.getElementById("second").value);
             var i;//循环变量
             var sum = 0,sum1 = 0, sum2 = 0;
-            
-            for(i = a;i <= b;i++){
+            i = a;
+            for(;;){
                 sum = sum + i;
                 if (i % 2 == 0) {
                     sum2 += i;
                 } else {
                     sum1 += i;
-                }
-                
+                }  
+                i++;  
+                if(i>b){
+                    break;
+                }            
             }
             document.getElementById("result").value = sum;
             document.getElementById("ji_result").value = sum1;
