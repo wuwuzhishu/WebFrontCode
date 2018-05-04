@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <script>
+        function while_jisuan() {
+            // while(条件){
+            //     循环体
+            // }
+            //得到两个数(a<b)
+            var a = Number(document.getElementById("first").value);
+            var b = Number(document.getElementById("second").value);
+            var i;//循环变量
+            var sum=0,sum1 = 0, sum2 = 0;
+            i = b ;//循环变量赋初值
+            while(i >= a){//循环变量的终值，循环条件
+                sum = sum+i;//总和
+                if( i % 2 == 0){
+                    sum2 += i;
+                }else{
+                    sum1 += i;
+                }
+                i--;//循环变量的改变
+            }
+            document.getElementById("result").value = sum;
+            document.getElementById("ji_result").value = sum1;
+            document.getElementById("ou_result").value = sum2;
+        }
+        function dowhile_jisuan() {
+            // do{
+            //     循环体
+            // }while(条件);
+            //得到两个数(a<b)
+            var a = Number(document.getElementById("first").value);
+            var b = Number(document.getElementById("second").value);
+            var i;//循环变量
+            var sum = 0,sum1=0,sum2=0;
+            i = a;//循环变量赋初值
+            do{//循环变量的终值，循环条件
+                sum = sum + i;
+                if (i % 2 == 0) {
+                    sum2 += i;
+                } else {
+                    sum1 += i;
+                }
+                i++;//循环变量的改变
+            } while (i <= b) ;
+            document.getElementById("result").value = sum;
+            document.getElementById("ji_result").value = sum1;
+            document.getElementById("ou_result").value = sum2;
+        }
+        function for_jisuan() {
+            // for(表达式1;表达式2;表达式3){
+            //     循环体;
+            // }
+            // 表达式1：循环变量的初值；表达式2：循环条件；表达式3：循环变量的改变
+            var a = Number(document.getElementById("first").value);
+            var b = Number(document.getElementById("second").value);
+            var i;//循环变量
+            var sum = 0,sum1 = 0, sum2 = 0;
+            
+            for(i = a;i <= b;i++){
+                sum = sum + i;
+                if (i % 2 == 0) {
+                    sum2 += i;
+                } else {
+                    sum1 += i;
+                }
+                
+            }
+            document.getElementById("result").value = sum;
+            document.getElementById("ji_result").value = sum1;
+            document.getElementById("ou_result").value = sum2;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="first" placeholder="请输入第一个数">到
+    <input type="text" id="second" placeholder="请输入第二个数">之间的总和为：
+    <input type="text" id="result" placeholder="点击确定显示结果">，奇数和为：
+    <input type="text" id="ji_result" placeholder="点击确定显示结果">，偶数和为：
+    <input type="text" id="ou_result" placeholder="点击确定显示结果">
+    <input type="button" value="while计算" onclick="while_jisuan()">
+    <input type="button" value="dowhile计算" onclick="dowhile_jisuan()">
+    <input type="button" value="for计算" onclick="for_jisuan()">
+</body>
+</html>

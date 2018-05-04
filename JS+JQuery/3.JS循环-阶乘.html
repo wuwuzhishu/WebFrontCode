@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <script>
+        function jiecheng() {
+            var n = Number(document.getElementById("shu").value);
+            var ji = 1;
+            for(var i = 1; i <= n; i++){
+                ji = ji * i;
+            }
+            document.getElementById("result").value = ji;
+        }
+
+        function jiechenghe() {
+            var n = Number(document.getElementById("shu1").value);
+            var sum = 0;
+            for(var i = 1; i <= n; i++){
+                var ji = 1;
+                for(var j = 1;j <= i; j++){
+                    ji = ji * j;
+                }
+                sum = sum + ji;
+            }
+            document.getElementById("result1").value = sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>求阶乘</h1>
+    <input type="text" id="shu" placeholder="请输入一个数">!=
+    <input type="text" id="result" placeholder="点击计算求结果">
+    <input type="button" value="计算" onclick="jiecheng()">
+    <hr>
+    <h1>求阶乘和</h1>
+    1!+2!+...+
+    <input type="text" id="shu1" placeholder="请输入一个数">!=
+    <input type="text" id="result1" placeholder="点击计算求结果">
+    <input type="button" value="计算" onclick="jiechenghe()">
+</body>
+</html>
