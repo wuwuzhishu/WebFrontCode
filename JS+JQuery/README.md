@@ -22,3 +22,10 @@
 2. [成绩等级](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E6%88%90%E7%BB%A9%E7%AD%89%E7%BA%A7.html)分别有if和switch的写法
 3. [switch语句嵌套](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-switch%E5%B5%8C%E5%A5%97.html)switch语句嵌套以及break语句的用法
 4. [年月日](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E5%B9%B4%E6%9C%88%E6%97%A5.html)根据年月日求是当年的第多少天，主要是练习break语句的应用
+
+## 2018.5.4
+
+1. [求和]( WebFrontCode/JS+JQuery/3.JS循环-求和.html )通过求和来练习while、do-while和for语句的应用
+2. [continue和break]( WebFrontCode/JS+JQuery/3.JS循环-continue.html )学习continue和break语句的应用
+3. [阶乘以及阶乘和]()学习双重循环的应用
+4. [九九乘法表]()
