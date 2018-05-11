@@ -29,3 +29,9 @@
 2. [continue和break](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/3.JS%E5%BE%AA%E7%8E%AF-continue.html)学习continue和break语句的应用
 3. [阶乘以及阶乘和](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/3.JS%E5%BE%AA%E7%8E%AF-%E9%98%B6%E4%B9%98.html)学习双重循环的应用
 4. [九九乘法表](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/3.JS%E5%BE%AA%E7%8E%AF-%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8.html)
+
+## 2018.5.11
+
+> 通过本次课程主要概述一下JQuery的语法及选择符和DOM的操作
+
+* [JQuery入门演示]()

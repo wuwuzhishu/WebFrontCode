@@ -17,6 +17,10 @@ a{
     height: 80px;
     background-color: #000000;
 }
+.fixed{
+    position: fixed;
+    top: 0;
+}
 #content{
     width: 90%;
     margin: 0 auto;/*居中显示*/

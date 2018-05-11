@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <title>Document</title>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        // $(document).ready(function () {
+        //     alert("dksajgkdsajkg");
+        // })
+        $(
+            function () {
+                // alert("kladsjgl;ksajdgjsakldjg");
+                $("p:first").css("color", "red");
+                // $("#one~p").css({"backgroundColor":"blue","border":"solid 4px red"});
+                // document.getElementsByClassName("p").style.color="red";
+                // $(selector).val();
+                $("img").mouseover(function () { 
+                    $(this).addClass("imgborder").siblings().removeClass("imgborder");
+                });
+
+                var len = $("img").length;
+                for(var i = 0;i < len;i++){
+                    $("img").eq(i).attr("src", "img/"+(i+1)+".jpg");
+                }
+                // alert($("img").eq(0).attr("src"));
+                var newNode = $("<p>新的结点</p>");
+                $("p:last").remove();
+                newNode.insertAfter($("p:last"));
+                // newNode.appendTo("body");
+                // newNode.prependTo("body");
+                
+                $("p:first").html("html修改<span>文本</span>内容");
+                $("p").eq(1).text("text 只是修改文本内容");
+        })
+    </script>
+    <style>
+        img{
+            width: 200px;
+        }
+        .imgborder{
+            border: solid 3px red;
+            width: 400px;            
+            border-radius: 20px;
+        }
+        span{
+            font-size: 40px;
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <p id="one">测试1</p>
+    <p>测试2</p>
+    <p>测试3</p>
+    <p>测试4</p>
+    <div>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+</body>
+</html>
