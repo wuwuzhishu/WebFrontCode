@@ -16,6 +16,7 @@
 
 ## 2018.4.27
 
+> 通过本次课程主要讲解分支结构
 四个例子：
 
 1. [水仙花数](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E6%B0%B4%E4%BB%99%E8%8A%B1%E6%95%B0.html)判断一个数是不是水仙花数
@@ -24,6 +25,8 @@
 4. [年月日](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/2.JS%E5%88%86%E6%94%AF-%E5%B9%B4%E6%9C%88%E6%97%A5.html)根据年月日求是当年的第多少天，主要是练习break语句的应用
 
 ## 2018.5.4
+
+> 通过本次课程主要讲解循环结构
 
 1. [求和](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/3.JS%E5%BE%AA%E7%8E%AF-%E6%B1%82%E5%92%8C.html)通过求和来练习while、do-while和for语句的应用
 2. [continue和break](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/3.JS%E5%BE%AA%E7%8E%AF-continue.html)学习continue和break语句的应用

@@ -43,3 +43,93 @@
 * 分割线
 * 表单
 * 四列布局和两列布局
+
+### 2018.5.16
+
+本次课程完成固定顶部导航以及回到顶部的内容
+
+#### 固定顶部导航
+
+* 添加JS代码
+
+```javascript
+//此函数实现的功能就是固定导航
+function fixHeader () {
+    var top = 0;
+    $(window).scroll(function  () {
+        top = $(this).scrollTop();
+        if(top > 50){
+            $(".box1").addClass("fixed");
+            $(".box1_left").hide();
+            $(".box1_right").hide();
+            $(".box1_mid").css("float","right");
+        }else{
+            $(".box1").removeClass("fixed");
+            $(".box1_left,.box1_right").show();
+            $(".box1_mid").css("float","left");
+        }
+    });
+}
+```
+
+* 用到的知识点（hide和show方法）
+
+> [jQuery 效果 - hide() 方法](http://www.w3school.com.cn/jquery/effect_hide.asp)
+>
+> [jQuery 效果 - show() 方法](http://www.w3school.com.cn/jquery/effect_show.asp)
+
+#### 回到顶部
+
+* 首先添加CSS样式
+
+```css
+.get_top p{
+    color: #000000;
+}
+.get_top{
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    font-size:12px ;
+    line-height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+```
+
+* 添加JS代码
+
+```javascript
+//此函数实现的功能就是回到顶部
+function backTop () {
+    //1.把回到顶部这个盒子进行隐藏
+    $(".get_top").hide();
+    //2.当滚动条滚动到某种程度的话显示回到顶部这个盒子
+    $(window).scroll(function  () {
+        var top = $(this).scrollTop();
+        if(top > 300){
+//          $(".get_top").fadeIn(3000,function  () {
+//              $(".get_top").css("background","#00ff00");
+//          });
+            $(".get_top").fadeIn(3000);
+        }else{
+            $(".get_top").fadeOut(1000);
+        }
+    });
+    //3.单击盒子时回到顶部
+    $(".get_top").click(function  () {
+        $("body,html").animate({scrollTop:0},100);
+    });
+}
+```
+
+* 用到的知识点
+
+> [jQuery 效果 - fadeIn() 方法](http://www.w3school.com.cn/jquery/effect_fadein.asp)
+>
+> [jQuery 效果 - fadeOut() 方法](http://www.w3school.com.cn/jquery/effect_fadeout.asp)
+>
+>[jQuery 效果 - animate() 方法](http://www.w3school.com.cn/jquery/effect_animate.asp)
