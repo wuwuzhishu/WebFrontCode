@@ -59,14 +59,14 @@ function fixHeader () {
     $(window).scroll(function  () {
         top = $(this).scrollTop();
         if(top > 50){
-            $(".box1").addClass("fixed");
-            $(".box1_left").hide();
-            $(".box1_right").hide();
-            $(".box1_mid").css("float","right");
+            $(".top").addClass("fixed");
+            $(".top_left").hide();
+            $(".top_right").hide();
+            $(".top_mid").css("float","right");
         }else{
-            $(".box1").removeClass("fixed");
-            $(".box1_left,.box1_right").show();
-            $(".box1_mid").css("float","left");
+            $(".top").removeClass("fixed");
+            $(".top_left,.top_right").show();
+            $(".top_mid").css("float","left");
         }
     });
 }
