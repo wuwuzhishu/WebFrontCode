@@ -10,23 +10,21 @@ function fixedTop() {
     $(window).scroll(function () { //滚动事件
         var top = $(this).scrollTop();//得到上下滚动的顶部位置
         if(top>80){
-                    /*hide方法有两个参数:
+            /*hide方法有两个参数:
                 第一个参数是时间，
                 第二个参数是回调函数
                 回调函数就是说hide方法执行完毕之后需要执行的代码
             */
-                    // $("#top_left").hide(10000,function () {
-                    //     $("#banner").hide();
-                    // });
-                    $("#top_left").hide(); //隐藏左边元素
-                    $("#top_right").hide(); //隐藏右边元素
-                    $("#top_mid").css("float", "right"); //设置中间元素右浮动
-                    $("#top").addClass("fixed"); //固定顶部导航
-                    //设置top为固定定位之后，top的下一个元素要设置上边距（值为top的高度）
-                    $("#top")
-                      .next()
-                      .css("marginTop", $("#top").height());
-                  }else{
+            // $("#top_left").hide(10000,function () {
+            //     $("#banner").hide();
+            // });
+            $("#top_left").hide(); //隐藏左边元素
+            $("#top_right").hide(); //隐藏右边元素
+            $("#top_mid").css("float", "right"); //设置中间元素右浮动
+            $("#top").addClass("fixed"); //固定顶部导航
+            //设置top为固定定位之后，top的下一个元素要设置上边距（值为top的高度）
+            $("#top").next().css("marginTop", $("#top").height());
+        }else{
             $("#top_left,#top_right").show();
             $("#top_mid").css("float", "left");
             $("#top").removeClass("fixed");

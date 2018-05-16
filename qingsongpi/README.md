@@ -55,18 +55,20 @@
 ```javascript
 //此函数实现的功能就是固定导航
 function fixHeader () {
-    var top = 0;
-    $(window).scroll(function  () {
-        top = $(this).scrollTop();
+    $(window).scroll(function  () {//滚动事件
+        var top = $(this).scrollTop();//得到上下滚动的顶部位置
         if(top > 50){
-            $(".top").addClass("fixed");
-            $(".top_left").hide();
-            $(".top_right").hide();
-            $(".top_mid").css("float","right");
+            $("#top_left").hide();//隐藏左边元素
+            $("#top_right").hide();//隐藏右边元素
+            $("#top_mid").css("float", "right"); //设置中间元素右浮动
+            $("#top").addClass("fixed"); //固定顶部导航
+            //设置top为固定定位之后，top的下一个元素要设置上边距（值为top的高度）
+            $("#top").next().css("marginTop", $("#top").height());
         }else{
-            $(".top").removeClass("fixed");
-            $(".top_left,.top_right").show();
-            $(".top_mid").css("float","left");
+            $("#top_left,#top_right").show();
+            $("#top_mid").css("float", "left");
+            $("#top").removeClass("fixed");
+            $("#top").next().css("marginTop", "0px");
         }
     });
 }
@@ -114,13 +116,13 @@ function backTop () {
 //          $(".get_top").fadeIn(3000,function  () {
 //              $(".get_top").css("background","#00ff00");
 //          });
-            $(".get_top").fadeIn(3000);
+            $("#get_top").fadeIn(3000);
         }else{
-            $(".get_top").fadeOut(1000);
+            $("#get_top").fadeOut(1000);
         }
     });
     //3.单击盒子时回到顶部
-    $(".get_top").click(function  () {
+    $("#get_top").click(function  () {
         $("body,html").animate({scrollTop:0},100);
     });
 }
