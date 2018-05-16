@@ -5,6 +5,11 @@
 a{
     text-decoration-line: none;
 }
+/* 定位：相对、绝对、固定 */
+.fixed{
+    position: fixed;/*固定定位*/
+    top:0;/*顶部位置*/
+}
 /* ID选择符以#开始 */
 /*包裹层*/
 #wrap{    
@@ -17,10 +22,7 @@ a{
     height: 80px;
     background-color: #000000;
 }
-.fixed{
-    position: fixed;
-    top: 0;
-}
+
 #content{
     width: 90%;
     margin: 0 auto;/*居中显示*/
@@ -100,6 +102,7 @@ a{
 #header{
     width: 100%;
     background-color: #5f5b5b;
+   
 }
 #header_left{
     float: left;
@@ -668,6 +671,21 @@ a{
     font-size: 14px;
 }
 
+#get_top p{
+    color: #000000;
+    font-size:10px ;
+}
+#get_top{
+	position: fixed;
+	right: 30px;
+	bottom: 50px;
+	width: 50px;
+	height: 50px;
+	background-color: #D7551A;	
+	line-height: 50px;
+	border-radius: 25px;
+	cursor: pointer;	
+}
 
 
 
