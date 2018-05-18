@@ -25,3 +25,15 @@
 * 利用浮动来实现多列布局的方法
 * 清除浮动的方法（clear:both或width以及overflow相结合）
 * CSS overflow属性
+
+## CSS多行文本省略号
+
+```css
+.line-limit-length {
+    width: 100px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+```
