@@ -137,3 +137,10 @@ function backTop () {
 >[jQuery 效果 - animate() 方法](http://www.w3school.com.cn/jquery/effect_animate.asp)
 
 ### 2018.5.22
+
+本次课程更新完成选项卡效果以及轮播的效果
+
+> 轮播的效果上传了两个：一个是通过JQuery完成的方法，一个是通过unslider插件完成的方法：
+> * [JQuery轮播效果](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JS%2BJQuery/%E8%BD%AE%E6%92%AD%E5%9B%BE%E6%95%88%E6%9E%9C/JQuery)
+>
+> * [JQuery unslider轮播效果](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JS%2BJQuery/%E8%BD%AE%E6%92%AD%E5%9B%BE%E6%95%88%E6%9E%9C/JQuery%20unslider)
