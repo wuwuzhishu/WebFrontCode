@@ -38,3 +38,20 @@
 > 通过本次课程主要概述一下JQuery的语法及选择符和DOM的操作
 
 * [JQuery入门演示](https://github.com/wuwuzhishu/WebFrontCode/blob/master/JS%2BJQuery/JQuery%E5%85%A5%E9%97%A8%E6%BC%94%E7%A4%BA/index.html) 学习JQuery框架的语法以及选择符和DOM的操作
+
+## 2018.5.22
+
+> 添加轻松批网页中用到的轮播图效果，一个是用JQuery来完成，另一个用JQuery unslider来完成（这个更简练）
+
+[Unslider — 一个超小的 jQuery轮播(slider)插件](http://www.bootcss.com/p/unslider/)
+
+```JavaScript
+$('.banner').unslider({
+    speed: 500,               //  The speed to animate each slide (in milliseconds)
+    delay: 3000,              //  The delay between slide animations (in milliseconds)
+    complete: function() {},  //  A function that gets called after every slide animation
+    keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+    dots: true,               //  Display dot navigation
+    fluid: false              //  Support responsive design. May break non-responsive designs
+});
+```
