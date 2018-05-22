@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/unslider.css">
+	<link rel="stylesheet" type="text/css" href="css/unslider-dots.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript">
+	$(function  () {
+		// body...
+		/*
+		speed	图片切换的速度，数字，单位为毫秒
+		delay	图片停留的时间，数字，单位为毫秒
+		complete	每次图片切换完后的回调函数，function() {}
+		keys	是否支持键盘控制，取值true  / false
+		dots	是否显示指示器，取值true / false
+		fluid	是否支持响应式布局，取值true / false
+		*/
+		$(function  () {
+			// body...
+			$(".banner").unslider();
+		})
+	})
+	</script>
+</head>
+<body>	
+	<div class="banner">
+		<ul>
+			<li><a href="#"><img src="img/1.jpg" alt="第1张图片"></a></li>
+		  	<li><a href="#"><img src="img/2.jpg" alt="第2张图片"></a></li>
+		  	<li><a href="#"><img src="img/3.jpg" alt="第3张图片"></a></li>
+		  	<li><a href="#"><img src="img/4.jpg" alt="第4张图片"></a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

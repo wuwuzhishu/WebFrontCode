@@ -135,3 +135,5 @@ function backTop () {
 > [jQuery 效果 - fadeOut() 方法](http://www.w3school.com.cn/jquery/effect_fadeout.asp)
 >
 >[jQuery 效果 - animate() 方法](http://www.w3school.com.cn/jquery/effect_animate.asp)
+
+### 2018.5.22
