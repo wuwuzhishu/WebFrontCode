@@ -217,7 +217,8 @@ a{
 #shop_body{
     margin-bottom: 30px;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;   
+    min-height: 450px;
 }
 #shop_body_left{
     float: left;
@@ -225,6 +226,7 @@ a{
 }
 #shop_body img{
     float: right;    
+    max-width: 40%;
 }
 #shop_body_left h1{
     margin-bottom: 50px;

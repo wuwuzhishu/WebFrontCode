@@ -2,6 +2,7 @@ $(//网页的加载
     function () {
         fixedTop();//调用函数，调用了固定导航这个函数
         backTop();//调用函数，调用了回到顶部这个函数
+        mytab(1);//调用函数，调用了选项卡这个函数
     }
 )
 
@@ -49,4 +50,28 @@ function backTop() {
     $("#get_top").click(function(e) {
         $("body,html").animate({scrollTop:0},100);
     });   
+}
+
+//函数定义：此函数实现选项卡的功能
+function mytab(i) {
+    //初始状态
+    $("#shop_header span").eq(i).addClass("active");//设置初始选项卡的样式
+    $(".shop_body_class")
+      .eq(i)
+      .siblings()
+      .css("display", "none"); //设置初始选项卡显示的内容
+    //添加鼠标经过的事件监听
+    $("#shop_header span").mouseover(function() {
+        //更改选项卡的样式
+        $(this).addClass("active").siblings().removeClass("active");
+        //需要求出当前对象（当前span）的序号（下标）
+        var xiabiao = $(this).index();  
+        //把span所对应的选项卡的内容显示并把其他兄弟元素不显示 
+        $(".shop_body_class")
+          .eq(xiabiao)
+          .css("display", "block")
+          .siblings()
+          .css("display", "none"); 
+    });
+    
 }
