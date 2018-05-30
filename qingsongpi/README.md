@@ -144,3 +144,33 @@ function backTop () {
 > * [JQuery轮播效果](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JS%2BJQuery/%E8%BD%AE%E6%92%AD%E5%9B%BE%E6%95%88%E6%9E%9C/JQuery)
 >
 > * [JQuery unslider轮播效果](https://github.com/wuwuzhishu/WebFrontCode/tree/master/JS%2BJQuery/%E8%BD%AE%E6%92%AD%E5%9B%BE%E6%95%88%E6%9E%9C/JQuery%20unslider)
+
+### 2018.5.30
+
+本次课程更新完成轮播效果
+
+> 应用JQuery Unslider插件完成轮播的步骤：
+
+* 1.修改html文件
+
+``` html
+<div class="banner">
+    <ul>
+        <li>轮播的页面或图片</li>
+        <li>轮播的页面或图片</li>
+        <li>轮播的页面或图片</li>
+    </ul>
+</div>
+```
+
+* 2.把unslider-min.js、unslider.css以及unslider-dots.css这三个文件拷贝到自己项目的对应文件夹中
+
+* 3.在HTML文件中引入unslider-min.js脚本文件，其次再引入unslider.css和两个CSS文件，如果需要修改样式的话，自行更改这两个CSS文件
+
+* 4.在HTML文件中添加内部脚本，代码如下：
+
+``` javascript
+        $(function () {
+            $('.banner').unslider();
+        });
+```
