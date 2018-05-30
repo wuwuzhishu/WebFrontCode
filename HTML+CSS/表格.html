@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        td{
+            text-align: center;
+        }
+        .bgcolor{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+        </tr>
+        <tr>
+            <td colspan="2">1-1</td>
+            <td>1-3</td>
+            <td>1-4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">2-1</td>
+            <td>2-2</td>
+            <td colspan="2" rowspan="2" class="bgcolor">2-3</td>
+        </tr>
+        <tr>
+            <td>3-2</td>
+        </tr>
+    </table>
+</body>
+</html>
